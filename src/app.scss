@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap');
+
+$ff: 'Montserrat', sans-serif;
+
+$color: #7B4ECA;
+
+/* Reset and base styles  */
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Links */
+
+a, a:link, a:visited  {
+    text-decoration: none;
+}
+
+a:hover  {
+    text-decoration: none;
+}
+
+/* Common */
+
+aside, nav, footer, header, section, main {
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+	font-weight: inherit;
+}
+
+ul, ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+img, svg {
+	max-width: 100%;
+	height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+
+input, textarea, button, select {
+	font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+label {
+	cursor: pointer;
+}
+
+legend {
+	display: block;
+}
+
+
+/* - обнуление */
+
+body{
+    font-family: $ff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: #1D1D1F;
+}
+.colored{
+    color: $color;
+}
+.container{
+max-width: 1170px;
+width: 100%;
+display: flex;
+margin:auto;
+}
+a{
+    text-decoration: none;
+    font-family: $ff;
+    color: #1D1D1F;
+}
+header{
+    padding-top: 33px;
+    .container{
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+.menu{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    &-item{
+        margin-right: 22px;
+        margin-left: 22px;
+        transition: 300ms ease;
+        &:hover{
+            opacity: 0.8;
+        }
+    }
+    
+}
+.telefone-block{
+    display: flex;
+    align-items: center;
+    a{
+        font-weight: 700;
+        transition: 300ms ease;
+        &:hover{
+            opacity: 0.8;
+        }
+    }
+   &_img{margin-right: 20px;}
+}
+
+
+.main{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    .container{
+        justify-content: space-between;
+    }
+    &-left{
+        width: 63%;
+    }
+    &-subtitle{
+        margin-bottom: 15px;
+        font-size: 32px;
+        font-weight: 600;
+    }
+    &-title{
+        font-size: 42px;
+        font-weight: 700;
+        line-height: 125%;
+        margin-bottom: 25px;
+    }
+    &-text{
+        color: #47474A;
+        font-size: 22px;
+        font-weight: 500;
+        margin-bottom: 40px;
+        /* ul{
+            padding-left: 24px;
+        } */
+        li{
+            margin-bottom: 15px;
+            /* list-style: circle; */
+            &::before{
+                /* content: url(./public/products/punkt.svg); */
+                content: "∘";
+                margin-right: 8px;
+            }
+            /* &::marker{
+                font-size: 6px;
+            } */
+        }
+    }
+    &-img{
+        width: 37%;
+        img{
+            width: 100%;
+        }
+        /* margin-right: -60px; */
+    }
+}
+.btn{
+    background-image: linear-gradient(135deg, #A000C8 0%, #6702BC 62.77%, #3104B0 100%);
+    border-radius: 7px;
+    padding: 15px 35px;
+    color: #fff;
+    position: relative;
+    z-index: 100;
+    display: block;
+    width: fit-content;
+    transition: 300ms ease;
+    &::before{
+        border-radius: inherit;
+        background-image: linear-gradient(165deg, #A000C8 40%, #6702BC 80.77%, #3104B0 100%);
+        content: '';    
+        display: block;
+        height: 100%;
+        position: absolute;
+        top: 0; 
+        left: 0;
+        opacity: 0;
+        width: 100%;
+        z-index: -100;
+        transition: opacity .3s;
+    }
+    &:hover:before {
+        opacity: 1;
+    }
+}
