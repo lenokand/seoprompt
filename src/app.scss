@@ -348,10 +348,214 @@ font-weight: 700;
 .result{
     margin-top: 100px;
     margin-bottom: 100px;
+    .title{
+        margin-bottom: 40px;
+    }
     .container{
         flex-direction: column;
     }
+    .navigation{
+        z-index: 3;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        right: 15px;
+        top: 0;
+    }
+    .swiper-next{
+        cursor: pointer;
+        background-color: #fff;
+    }
+    .swiper-prev{
+        margin-right: 15px;
+        cursor: pointer;
+        background-color: #fff;
+    }
     .result-slider{
         width: 100%;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        color: #47474A;
+        font-weight: 600;
+      }
+      th, td {
+        /* border: 1px solid black; */
+        padding: 8px;
+       
+        text-align: center;
+      }
+    td{
+       
+    }
+    tr th:first-child{
+        text-align: left;
+    }
+      tr td:first-child {
+       color: #7B4ECA;
+       text-align: left;
+      }
+      tr{
+        transition: 300ms ease;
+        &:hover{
+            background-color: #6802bc0f;
+        }
+      }
+      tr:first-child {
+        border-bottom: 1px solid #D9D9D9;
+        margin-bottom: 5px;
+        background: none;
+      }
+      
+
+}
+.chart-title{
+    font-size: 24px;
+
+    font-weight: 600;
+    margin-bottom: 35px;
+    padding-top: 5px;
+}
+.apply{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 45px;
+    border: 3px solid #7B4ECA;  
+    padding: 34px 60px;
+    margin: auto;
+    margin-bottom: 90px;
+    /* margin-top: auto; */
+    width: 87%;
+    /* margin-right: 15px;
+    margin-left: 15px; */
+    &-number{
+        color: #FC982E;
+        font-size: 36px;
+        font-weight: 900;
+        margin-bottom: 5px;
+    }
+    &-top{
+        font-size: 24px;    
+        font-weight: 600;
+    }
+    &-bottom{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    &-col{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    span{
+        width: 2px;
+        height: 84px;
+        background: #D9D9D9;
+    }
+}
+.firm{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+    &-name{
+        margin-right: 15px;
+    }
+    &-link{
+        font-size: 20px;
+        font-weight: 700;
+        margin-right: 30px;
+    }
+    .city{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        background: #E8DAF3;
+        color: #47474A;
+        font-size: 14px;
+        font-weight: 500;
+        padding: 5px 13px;
+        img{
+            margin-right: 10px;
+        }
+    }
+    &-info{
+        border-radius: 10px;
+        border: 2px solid #D9D9D9;
+        padding: 30px 74px;
+        display: flex;
+        /* align-items: flex-start; */
+        justify-content: space-between;
+        &_title{
+            margin-bottom: 25px;
+        }
+        &_report{
+            margin-bottom: 40px;
+        }
+        &_left{
+            width: 47%;
+
+        }
+        &_right{
+            width: 47%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: stretch;
+        }
+    }
+
+   
+}
+
+
+
+.price{
+    .container{
+        flex-direction: column;
+
+    }
+    .title{
+        margin-bottom: 40px;
+    }
+    &-container{
+        display: flex;
+        justify-content: space-between;
+    }
+    &-col{
+        padding: 20px 66px;
+        border-radius: 10px;
+        border: 2px solid #D9D9D9;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &-title{
+        border-radius: 5px;
+        background: #E8DAF3;
+        width: 100%;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        font-size: 18px;
+        font-weight: 600;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    &-info{
+        width: 100%;
+        &-title{
+            text-align: center;
+            font-size: 16px;
+font-style: normal;
+font-weight: 500;
+        }
     }
 }
