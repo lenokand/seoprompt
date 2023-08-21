@@ -28,3 +28,32 @@ const swiper = new Swiper('.result-slider', {
       // }
     }
   });
+
+
+  // faq
+
+
+let faq = document.getElementsByClassName("faq-title");
+let i;
+
+for (i = 0; i < faq.length; i++) {
+    faq[i].addEventListener("click", function () {
+        /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+        this.classList.toggle("active");
+
+        /* Toggle between hiding and showing the active panel */
+        var body = this.nextElementSibling;
+        if (body.style.position === "static") {
+            body.style.position = "absolute";
+            body.style.opacity = "0";
+            body.style.padding = "0";
+
+        } else {
+            body.style.position = "static";
+            body.style.opacity = "1";
+            body.style.padding = " 15px 0 0 0";
+        }
+    });
+}
+
