@@ -57,3 +57,23 @@ for (i = 0; i < faq.length; i++) {
     });
 }
 
+    // бургер меню
+
+    const icons = document.querySelectorAll('.burger');
+    const header = document.querySelector('.menu');
+    const body = document.querySelector('body');
+    icons.forEach (icon => {  
+      icon.addEventListener('click', (event) => {
+        icon.classList.toggle("open");
+        header.classList.toggle("open");
+        
+        body.classList.toggle("open");
+    
+      });
+    });
+    
+    // const elem = document.getElementById('actions-menu-date-calendar');
+    // const datepicker = new Datepicker(elem, {
+    
+    // });
+    
