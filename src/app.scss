@@ -1191,7 +1191,7 @@ margin-bottom: 100px;
     float: right;
  
     height: 28px;
-    display: flex;
+    /* display: flex; */
     align-items: center;
     justify-content: center;
 }
@@ -1209,4 +1209,188 @@ margin-bottom: 100px;
         opacity: 0;
         transition: 300ms ease padding;
     }
+}
+
+.plan{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    .title{
+        margin-bottom: 25px;
+    }
+    .container{
+        flex-direction: column;
+    }
+    &_sign{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: #000;
+        font-size: 22px;
+        font-weight: 400;
+        margin-bottom: 50px;
+        &_btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        background: linear-gradient(318deg, #DEDEDE 0%, #ECECEC 100%);
+            transition: 300ms ease;
+        width: 205px;
+        height: 40px;
+        &:hover{
+            opacity: 0.95;
+
+        }
+        }
+    }
+    &-block{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        justify-content: space-between;
+        &_bg{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &_item{
+            padding: 30px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: calc(25% - 25px);
+            /* background: url(./public/products/rectangle.svg); */
+            /* background-size: 100% 100% ; */
+            /* background-position: ; */
+            /* background-repeat: no-repeat; */
+        }
+        .item-img{
+            margin-bottom: 15px;
+        }
+        .item-name{
+            font-size: 20px;
+            font-weight: 500;
+            /* margin-bottom: 5px; */
+        }
+        .item-time{
+            color: #38383C;
+            
+            font-size: 12px;
+       
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+        .item-price{
+            font-weight: 600;
+            span{
+                font-size: 30px;
+            }
+        }
+    }
+}
+
+.contacts{
+    margin-top: 100px;
+    margin-bottom: 120px;
+    .title{
+        margin-bottom: 60px;
+    }
+    .container{
+        flex-direction: column;
+    }
+    &-block{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &-left{
+        display: flex;
+        flex-direction: column;
+        &_sign{
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        &_tel{
+            font-size: 40px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        &_time{
+            font-size: 20px;
+            font-weight: 300;
+            margin-bottom: 40px;
+        }
+    }
+    &-right{
+        background: #6B44B0;
+        border-radius: 10px;
+        width: 60%;
+        background:#6B44B0  url(./public/products/contacts-fon.svg);
+
+        /* height: 100%; */
+        padding: 30px;
+        &_sign{
+            font-size: 22px;
+            color: #FFF;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        &_link{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            color: #FFF;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 150%;
+            margin-bottom: 15px;
+            img{
+                margin-right: 20px;
+            }
+        }
+    }
+}
+.contact-btn{
+    color: #7B4ECA;
+
+font-size: 18px;
+
+font-weight: 700;
+background: none;
+border-radius: 10px;
+border: 3px solid #7B4ECA;  
+width: 291px;
+height: 72px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.footer{
+    padding: 25px 0;
+    background: #F2F1F1;
+    font-weight: 400;
+    a{
+        display: flex;
+        font-weight: 400;
+    }
+    .mail{
+        color: #7B4ECA;
+    }
+.container{
+justify-content: space-between;
+align-items: center;
+}
+&-item:nth-child(1){
+    margin-bottom: 6px;
+}
 }
