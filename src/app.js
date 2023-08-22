@@ -76,4 +76,4 @@ for (i = 0; i < faq.length; i++) {
     // const datepicker = new Datepicker(elem, {
     
     // });
-    
+    AOS.init();
