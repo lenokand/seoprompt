@@ -610,6 +610,7 @@ font-weight: 700;
             }
         }
         .btn{
+            /* background: linear-gradient(160deg, #7B4ECA 0%, #50215A 100%); */
             background: linear-gradient(160deg, #7B4ECA 0%, #50215A 100%);
             width: 100%;
         }
@@ -750,6 +751,9 @@ font-weight: 700;
         line-height: 150%;
         img{
             margin-right: 30px;
+            width: 50px;
+            height: 50px;
+            border-radius: 10px;
         }
     }
 }
@@ -786,6 +790,10 @@ font-weight: 700;
             background: #F2F1F1;
             /* padding: 15px 30px; */
             padding: 15px 20px 35px 20px;
+            &.block-right{
+                padding: 15px 20px 15px 20px;
+            }
+            
         }
         &-top{
             display: flex;
@@ -1357,6 +1365,9 @@ margin-bottom: 100px;
             margin-bottom: 15px;
             img{
                 margin-right: 20px;
+                width: 70px;
+                height: 70px;
+                border-radius: 10px;
             }
         }
     }
