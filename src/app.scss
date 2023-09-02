@@ -104,7 +104,13 @@ body{
     font-weight: 600;
     line-height: normal;
     color: #1D1D1F;
+    background: url('./public/products/fon.png');
+    background-position: top left 100%;
+    background-size: cover;
+    background-repeat:  no-repeat;
     &.open{ overflow:hidden}
+
+   
 }
 .colored{
     color: $color;
@@ -219,6 +225,7 @@ header{
     &::before{
         border-radius: inherit;
         background-image: linear-gradient(165deg, #A000C8 40%, #6702BC 80.77%, #3104B0 100%);
+        /* background-image: linear-gradient(165deg, #A000C8 40%, #6702BC 50.77%, #3104B0 100%); */
         content: '';    
         display: block;
         height: 100%;
@@ -591,6 +598,7 @@ font-weight: 700;
     }
     &-action{
         border-radius: 5px;
+        /* background: #f2f1f1ba; */
         background: #F2F1F1;
         padding:  20px 30px;
         width: 100%;
@@ -611,7 +619,9 @@ font-weight: 700;
         }
         .btn{
             /* background: linear-gradient(160deg, #7B4ECA 0%, #50215A 100%); */
-            background: linear-gradient(160deg, #7B4ECA 0%, #50215A 100%);
+            /* background: linear-gradient(160deg, #7B4ECA 0%, #50215A 100%); */
+            background: linear-gradient(97deg, #7B4ECA -79.52%, #50215A 362.99%);
+
             width: 100%;
         }
  
@@ -789,9 +799,16 @@ font-weight: 700;
             border-radius: 10px;
             background: #F2F1F1;
             /* padding: 15px 30px; */
-            padding: 15px 20px 35px 20px;
+            padding: 15px 20px 41px 20px;
             &.block-right{
                 padding: 15px 20px 15px 20px;
+            }
+            &.block-bottom{
+                padding: 42px 20px 43px 20px;
+                min-height: 27%;
+                .stages-block-top {
+                    margin-bottom: 0;
+                }
             }
             
         }
@@ -800,7 +817,8 @@ font-weight: 700;
             align-items: center;
             justify-content: flex-start;
             /* justify-content: space-between; */
-            margin-bottom: 20px;
+            /* margin-bottom: 20px; */
+            margin-bottom: 15px;
         }
         &-bottom{
         display: flex;
@@ -816,10 +834,11 @@ font-weight: 700;
             padding-right: 10px;
             div{
                 margin-bottom: 10px;
+                font-weight: 500;
             }
             li{
                 list-style: disc;
-                margin-bottom: 15px;
+                margin-bottom: 10px;
                 margin-left: 10px;
                 font-size: 15px;
                
@@ -1105,6 +1124,10 @@ font-weight: 700;
             .btn{
                 padding-top: 8px;
                 padding-bottom: 8px;
+                font-weight: 700;
+                max-width: 280px;
+                flex-grow: 1;
+                height: 44px;
             }
         }
 
@@ -1173,7 +1196,7 @@ font-weight: 700;
 margin-top: 100px;    
 margin-bottom: 100px;    
 .title{
-    margin-bottom: 60px;
+    margin-bottom: 20px;
 }
 .container{
     flex-direction: column;
@@ -1243,6 +1266,8 @@ margin-bottom: 100px;
         align-items: center;
         justify-content: center;
         border-radius: 10px;
+        font-weight: 500;
+        font-size: 16px;
         background: linear-gradient(318deg, #DEDEDE 0%, #ECECEC 100%);
             transition: 300ms ease;
         width: 205px;
@@ -1343,7 +1368,7 @@ margin-bottom: 100px;
     &-right{
         background: #6B44B0;
         border-radius: 10px;
-        width: 60%;
+        width: 61%;
         background:#6B44B0  url(./public/products/contacts-fon.svg);
 
         /* height: 100%; */
