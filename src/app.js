@@ -134,3 +134,45 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = "flex"  
     // console.log(progres[slideIndex - 1])  
   }
+
+
+  // модальное окно
+
+
+  document.addEventListener('DOMContentLoaded', function() {
+    let modalButtons = document.querySelectorAll('.js-open-modal')
+    let   overlay      = document.querySelector('#overlay-modal')
+    let   closeButtons = document.querySelectorAll('.js-modal-close')
+    
+    
+    modalButtons.forEach(function(item){
+       
+       item.addEventListener('click', function(e) {
+          
+          e.preventDefault();
+          var modalId = this.getAttribute('data-modal'),
+              modalElem = document.querySelector('.modal[data-modal="' + modalId + '"]');
+          
+          modalElem.classList.add('active');
+          overlay.classList.add('active');
+          body.classList.add('open')
+
+
+          
+       }); // end click
+    }); // end foreach
+
+
+
+    closeButtons.forEach(function(item){
+      item.addEventListener('click', function(e) {
+         var parentModal = this.closest('.modal');
+         parentModal.classList.remove('active');
+         overlay.classList.remove('active');
+         body.classList.remove('open')
+      });
+    }); // end foreach
+
+
+ }); // end ready
+

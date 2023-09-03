@@ -1665,7 +1665,7 @@
                 <div class="contacts-left_time">
                     Ежедневно с 9:00 до 20:00
                 </div>
-                <a href="#formblock" class=" contact-btn">Заказать звонок</a>
+                <a href="#formblock" class=" contact-btn js-open-modal" data-modal="modal">Заказать звонок</a>
             </div>
             <div class="contacts-right">
                 <div class="contacts-right_sign">
@@ -1702,6 +1702,35 @@
         </div>
     </div>
 </footer>
+
+<div class="modals">
+    <div class="modal" id="modal" data-modal="modal">
+        
+       
+        
+        <div class="modal_title">
+            <span>Заказать звонок</span>
+            <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"  fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.4507 16L0 0H2.37777L15.8285 16H13.4507Z" fill="#D9D9D9"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.37792 16L15.8286 0H13.4508L0.000156403 16H2.37792Z" fill="#D9D9D9"/>
+            </svg>
+        </div>
+
+        <form action="" method="post" class="modal_form">
+            <input type="text" placeholder="Ваше имя">
+            <input type="tel" placeholder="Телефон*">
+            <input type="email" placeholder="E-mail">
+            <div class="agreement">
+                Нажатием на «Отправить» подтверждаю согласие с <a href="#">обработкой персональных данных</a> 
+            </div>
+            <button class="" type="submit">
+                Отправить
+            </button>
+
+        </form>
+    </div>
+    <div class="overlay" id="overlay-modal"></div>
+</div>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
