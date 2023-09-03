@@ -1007,33 +1007,46 @@
             <form action="" class="quiz-form" method="post">
                 <div class="rows-wrapper">
                     <div class="form-row active">
-                        <input type="text" placeholder="Адрес сайта">
+                        <input type="text" value="" placeholder="Адрес сайта">
+                    </div>
+                    <div class="form-row ">
+                        <input type="text" value="" placeholder="Имя">
+                    </div>
+                    <div class="form-row ">
+                        <input type="tel" placeholder="Телефон">
+                    </div>
+                    <div class="form-row ">
+                        <input type="email" placeholder="Email">
                     </div>
                 </div>
                 <div class="form-buttons">
-                    <div class="quiz-next form-button">Продолжить</div>
-                    <button class="submit form-button" type="submit">Отправить</button>
+                    <div class="quiz-next form-button" id="quiz-next">Продолжить</div>
+                    <button class="submit form-button" id="quiz-submit" type="submit">Отправить</button>
                 </div>
              
             </form>
 
             <div class="progressbar">
-                <div class="progressbar-item show">
-                    <div class="square"></div>
-                    <div class="line"></div>
-                </div>
-                <div class="progressbar-item show">
-                    <div class="square"></div>
-                    <div class="line"></div>
-                </div>
-                <div class="progressbar-item ">
-                    <div class="square"></div>
-                    <div class="line"></div>
-                </div>
-                <div class="progressbar-item">
+                <div class="progressbar-item  first">
                     <div class="square"></div>
                   
                 </div>
+                <div class="progressbar-item ">
+                    <div class="line"></div>
+                    <div class="square"></div>
+                  
+                </div>
+                <div class="progressbar-item ">
+                    <div class="line"></div>
+                    <div class="square"></div>
+                   
+                </div>
+                <div class="progressbar-item ">
+                    <div class="line"></div>
+                    <div class="square"></div>
+                    
+                </div>
+                
                 
             </div>
         </div>
@@ -1572,7 +1585,7 @@
 
         <div class="plan_sign">
             <div class="">    Разработка сайтов и сервисов любой сложности.</div>
-            <a href="#" class="plan_sign_btn">Подробнее</a>
+            <a href="#formblock" class="plan_sign_btn">Подробнее</a>
         </div>
         <div class="plan-block">
             <div class="plan-block_item">

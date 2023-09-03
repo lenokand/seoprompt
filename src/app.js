@@ -77,3 +77,60 @@ for (i = 0; i < faq.length; i++) {
     
     // });
     AOS.init();
+
+
+
+    // quiz
+
+
+
+// let prev = document.getElementById ('quiz-next');
+let submit = document.getElementById("quiz-submit")
+let next = document.getElementById ('quiz-next');
+let slides = document.getElementsByClassName("form-row");
+
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+next.addEventListener ("click", function () {
+  
+
+  let current_input =  slides[slideIndex-1].querySelector('input')
+
+  if(current_input.value !== ""){
+    showSlides(slideIndex += 1)
+  }
+ 
+});
+
+// prev.addEventListener ("click", function () {
+//   showSlides(slideIndex -= 1);
+// });
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+
+function showSlides(n) {
+    
+    let progres = document.getElementsByClassName("progressbar-item");
+    if (n > slides.length - 1) {
+      // slideIndex = 1;
+      // console.log('close')
+      next.style.display = "none"
+      submit.style.display = "flex"
+    }
+    // if (n < 1) {
+    //     slideIndex = slides.length;
+    // }
+ 
+    for (let slide of slides) {
+        slide.style.display = "none";
+    }
+    
+    progres[slideIndex - 1].classList.add("show")    
+    slides[slideIndex - 1].style.display = "flex"  
+    // console.log(progres[slideIndex - 1])  
+  }

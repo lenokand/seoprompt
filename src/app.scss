@@ -142,8 +142,15 @@ header{
         margin-right: 22px;
         margin-left: 22px;
         transition: 300ms ease;
+        a{
+            transition: 300ms ease; 
+        }
         &:hover{
-            opacity: 0.8;
+            /* opacity: 0.8; */
+            color: #7b4eca;
+            a{
+                color: #7b4eca;
+            }
         }
     }
     
@@ -155,7 +162,8 @@ header{
         font-weight: 700;
         transition: 300ms ease;
         &:hover{
-            opacity: 0.8;
+            /* opacity: 0.8; */
+            color: #7b4eca;
         }
     }
    &_img{margin-right: 20px;}
@@ -627,7 +635,9 @@ font-weight: 700;
  
     }
 }
-
+    #quiz-submit{
+        display: none;
+    }
 
 .quiz{
     margin-top: 50px;
@@ -687,6 +697,23 @@ font-weight: 700;
             align-items: center;
             justify-content: stretch;
             width: 100%;
+            
+            .square{
+                transition: 500ms ease;
+                transition-delay: 500ms;
+            }
+            .line{
+                transition: 500ms ease;
+            }
+
+            &.first{
+                /* width: 50%; */
+                /* flex-grow: 0; */
+                flex-shrink: 2;
+                .square{
+                    background: #FC982E;
+                } 
+            }
             &.show{
                 .square{
                     background: #FC982E;
@@ -728,7 +755,7 @@ font-weight: 700;
             cursor: pointer;
         }
         .submit{
-            display: none;
+            /* display: none; */
         }
     }
     &-contact{
@@ -1370,7 +1397,8 @@ margin-bottom: 100px;
         border-radius: 10px;
         width: 61%;
         background:#6B44B0  url(./public/products/contacts-fon.svg);
-
+        background-position: top right;
+        background-size: cover;
         /* height: 100%; */
         padding: 30px;
         &_sign{
