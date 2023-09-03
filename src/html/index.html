@@ -95,7 +95,7 @@
                     <li>Первые заявки уже со второго месяца продвижения</li>
                 </ul>
             </div>
-            <a href="#formblock" class="btn main-btn">
+            <a href="#formblock" data-modal="modal" class="btn main-btn js-open-modal">
                 Заказать звонок
             </a>
         </div>
@@ -900,7 +900,7 @@
                     <div class="price-action-number">
                       <span> 25 000</span>  руб/мес
                     </div>
-                    <a href="#formblock" class="btn">Заказать</a>
+                    <a href="#formblock" data-modal="modal" class="btn js-open-modal">Заказать</a>
                 </div>      
             </div>
             <div class="price-col">
@@ -943,7 +943,7 @@
                     <div class="price-action-number">
                       <span> 25 000</span>  руб/мес
                     </div>
-                    <a href="#formblock" class="btn">Заказать</a>
+                    <a href="#formblock" class="btn js-open-modal" data-modal="modal">Заказать</a>
                 </div>      
             </div>
             <div class="price-col">
@@ -986,7 +986,7 @@
                     <div class="price-action-number">
                       <span> 25 000</span>  руб/мес
                     </div>
-                    <a href="#formblock" class="btn">Заказать</a>
+                    <a href="#formblock" data-modal="modal" class="btn js-open-modal">Заказать</a>
                 </div>      
             </div>
         </div>
@@ -1007,16 +1007,19 @@
             <form action="" class="quiz-form" method="post">
                 <div class="rows-wrapper">
                     <div class="form-row active">
-                        <input type="text" value="" placeholder="Адрес сайта">
+                        <input type="text" name="adress" placeholder="Адрес сайта">
                     </div>
                     <div class="form-row ">
-                        <input type="text" value="" placeholder="Имя">
+                        <input type="text" name="cms" placeholder="Система управления сайтом">
                     </div>
                     <div class="form-row ">
-                        <input type="tel" placeholder="Телефон">
+                        <input type="text" name="region" placeholder="Регион продвижения">
                     </div>
                     <div class="form-row ">
-                        <input type="email" placeholder="Email">
+                        <input type="text" name="seo" placeholder="Продвигался ли сайт ранее?">
+                    </div>
+                    <div class="form-row ">
+                        <input type="tel" name="tel" placeholder="Телефон">
                     </div>
                 </div>
                 <div class="form-buttons">
@@ -1040,6 +1043,11 @@
                     <div class="line"></div>
                     <div class="square"></div>
                    
+                </div>
+                <div class="progressbar-item ">
+                    <div class="line"></div>
+                    <div class="square"></div>
+                    
                 </div>
                 <div class="progressbar-item ">
                     <div class="line"></div>
